@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Pam Vasquez",
+    "imageURL": "here is my pick",
+    "choices": [1, 2, 3, 4]
+  },
+  {
+    "name": "Pamela Vasquez",
+    "imageURL": "here is my pick",
+    "choices": [1, 5, 3, 4]
+  }
+]
