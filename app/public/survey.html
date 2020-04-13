@@ -3,9 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey</title>
+    <title>Friend Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Survey</h1>
+  <body style="background-color: #e8eaf6;">
+    <div class="container" style="">
+      <div class="row">
+        <h2 class="center-align">Let's get to know you better</h2>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="name" type="text" class="validate" />
+            <label for="name">Tell us your name</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="name" type="url" class="validate" />
+            <label for="name">Share an image url</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Select one</option>
+              <option value="1">The Office</option>
+              <option value="2">Parks and Rec</option>
+              <option value="3">Friends</option>
+              <option value="4">How I Met Your Mother</option>
+            </select>
+            <label>Which show do you prefer?</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Select one</option>
+              <option value="1">Pizza</option>
+              <option value="2">Wings</option>
+              <option value="3">Salad</option>
+              <option value="4">Sandwich</option>
+            </select>
+            <label>Which food do you prefer?</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Select one</option>
+              <option value="1">Summer</option>
+              <option value="2">Spring</option>
+              <option value="3">Winter</option>
+              <option value="4">Fall</option>
+            </select>
+            <label>Which season do you prefer?</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Select one</option>
+              <option value="1">Walmart</option>
+              <option value="2">Target</option>
+              <option value="3">Costco</option>
+            </select>
+            <label>Which department store do you prefer?</label>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Select one</option>
+              <option value="1">Introvert</option>
+              <option value="2">Extrovert</option>
+            </select>
+            <label>Which do you identify most with?</label>
+          </div>
+        </div>
+      </div>
+      <a
+        id="submit"
+        class="btn-floating btn-large pulse indigo darken-4 right"
+        href="/survey"
+        ><i class="material-icons">chevron_right</i></a
+      >
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").formSelect();
+      });
+    </script>
   </body>
 </html>
